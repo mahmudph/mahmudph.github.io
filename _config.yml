@@ -1,0 +1,46 @@
+# Site
+name: Meblogs
+description: personal blogs for sharing knowlage by mahmud
+meta_description: "membahas mengenai segala hal berkaitan dengan teknologi"
+logo: 'assets/images/logo.png'
+favicon: 'assets/images/favicon.ico'
+paginate: 6
+paginate_path: "/page/:num/"
+baseurl: 
+permalink: '/tutorial/:title/'
+email: 'mahmud120398@gmail.com'
+google_analytics: 'UA-46278016-1'
+disqus: 
+  shortname: 'https-mahmudph-github-io-meeblogs'
+  url : 'https://mahmudph.github.io/meblogs/'
+sharethis: '<script type="text/javascript" src="//platform-api.sharethis.com/js/sharethis.js#property=5a6b2fe4fb197a0011c589f6&product=sticky-share-buttons"></script>'
+tutorial : [reactjs, react-native, nodejs, python, datascience]
+
+# Authors
+authors:
+  Mahmud:
+    name: Mahmud
+    display_name: Mahmud
+    gravatar: e56154546cf4be74e393c62d1ae9f9d4
+    email: mahmud120398@gmail.com
+    web: https://mahmudph.github.io/meblogs
+    twitter: https://twitter.com/wowthemesnet
+    description: "just as a students who live in palembang city with a big interest in php, python programing, node js, react-js, react-native, flutter and manchine learning"
+  
+# Plugins
+plugins_dir: 
+  - jekyll-paginate
+  - jekyll-admin
+  - jekyll-category-pages
+    
+# jekyll_admin:
+  # hidden_links:
+    # - posts
+    # - pages
+    # - staticfiles
+    # - datafiles
+    # - configuration
+  
+# Other
+markdown: kramdown
+highlighter: rouge
