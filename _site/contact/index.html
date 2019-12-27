@@ -63,20 +63,17 @@
                 </li>
                 
                 <li class="nav-item">                
-                    <a class="nav-link" href="/about">About</a>
-                </li> 
-                
+                   <a class="nav-link" href="/blog">Blogs</a>
+                </li>                 
                 <li class="nav-item">                
                     <a class="nav-link" href="/contact">Contact</a>
                 </li> 
-                
-                 <li class="nav-item">                
-                    <a class="nav-link" href="/blog">Blogs</a>
-                </li>                 
-
                 <li class="nav-item">                
-                    <a class="nav-link nav-link highlight" href="/portofolio">Portofolio</a>
-                </li>
+                    <a class="nav-link" href="/about">About</a>
+                </li> 
+                <!-- <li class="nav-item">                
+                    <a target="_blank" class="nav-link nav-link highlight" href="/portofolio">Portofolio</a>
+                </li> -->
 
                 
             </ul>
@@ -115,7 +112,7 @@
     </div>
     
     <div class="article-post">
-    <form action="https://formspree.io/mahmud120398@gmail.com" method="POST">
+    <form id='kirim' action="https://getsimpleform.com/messages?form_api_token=59cebe6b9a39d23c312b2ed144d42885" method="POST">
     
     <div class="form-group row">
 
@@ -124,14 +121,16 @@
         </div>
 
         <div class="col-md-6">
-            <input class="form-control" type="email" name="_replyto" placeholder="E-mail Address">
+            <input class="form-control" type="email" name="_replyto" placeholder="E-mail Address" required>
+            <input type="text" name="_gotcha" style="display:none" />
+            <input type='hidden' name='redirect_to' value='https://mahmudph.github.io/meblogs/complete/' />
         </div>
 
     </div>
 
     <textarea rows="8" class="form-control mb-3" name="message" placeholder="Message"></textarea>
     
-    <input class="btn btn-success" type="submit" value="Send">
+    <input class="btn btn-success" type="submit" value="Send" >
 
 </form>
     </div>
@@ -174,7 +173,7 @@
                     <div class="footer-widget textwidget">
                         <h5 class="title">Portofolio</h5>
                         <p>Portofolio ini merupakan versi terbaru dari yang saya miliki</p>
-                        <a target="_blank" href="https://www.wowthemes.net/affiliate-area/">Portofolio</a>
+                        <a target="_blank" href="/portofolio">Portofolio</a>
                     </div>
                 </div>
                 </div>

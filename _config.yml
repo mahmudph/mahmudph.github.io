@@ -6,7 +6,7 @@ logo: 'assets/images/logo.png'
 favicon: 'assets/images/favicon.ico'
 paginate: 6
 paginate_path: "/page/:num/"
-baseurl: 
+baseurl: https://mahmudph.github.io/meblogs
 permalink: '/tutorial/:title/'
 email: 'mahmud120398@gmail.com'
 google_analytics: 'UA-46278016-1'
