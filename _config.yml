@@ -1,5 +1,5 @@
 # Site
-name: Meblogs
+name: CangkirArtikel
 description: personal blogs for sharing knowlage by mahmud
 meta_description: "membahas mengenai segala hal berkaitan dengan teknologi"
 logo: 'assets/images/logo.png'
@@ -25,8 +25,16 @@ authors:
     email: mahmud120398@gmail.com
     web: https://mahmudph.github.io/meblogs
     twitter: https://twitter.com/wowthemesnet
-    description: "just as a students who live in palembang city with a big interest in php, python programing, node js, react-js, react-native, flutter and manchine learning"
-  
+    description: "Layaknya seperti layar kecil berada di lautan bebas, begitu seringnya terkena guncangan ombak maupun tiupan angin, jika tidak memiliki keteguhan dan kemantapan dalam mengendalikannya tentulah layar tersebut akan cepat tenggelam. begitupun dengan diri kita, ketika tidak memiliki prinsip dan perencanaan yang matang maka sangat mungkin akan tersesat dan tak akan pernah sampai."
+  Ferizal:
+    name: Ferizal
+    display_name: Ferizal
+    email: mahmud120398@gmail.com
+    web: null
+    twitter: https://twitter.com/wowthemesnet
+    description: "null"
+
+
 # Plugins
 plugins_dir: 
   - jekyll-paginate
