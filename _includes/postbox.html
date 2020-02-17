@@ -4,7 +4,12 @@
 <div class="col-md-6 grid-item">
 <div class="card">
     <a href="{{ post.url | absolute_url }}">
-        {% if post.image %} <img class="img-fluid" src="{{ site.baseurl }}/{{ post.image }}" width="100%" height="150px" style="height: 300px !important;" alt="{{ post.title }}"> {% endif %}
+        {% if post.image %} 
+            <img class="img-fluid" src="{{ site.baseurl }}/{{ post.image }}" width="100%" height="150px" style="height: 300px !important;" alt="{{ post.title }}"> 
+        {% else if post.imageUrl%}
+            <img class="img-fluid" src="{{ post.imageUrl }}" width="100%" height="150px" style="height: 300px !important;" alt="{{ post.title }}"> 
+        {% endif %}
+
     </a>
     <div class="card-block">
         <h2 class="card-title"><a href="{{ post.url | absolute_url }}">{{ post.title }}</a></h2>
@@ -13,7 +18,7 @@
             <div class="wrapfooter">
                 {% if post.author %}
                 <span class="meta-footer-thumb">
-                <img class="author-thumb" src="https://www.gravatar.com/avatar/{{ author.gravatar }}?s=250&d=mm&r=x" alt="{{ author.display_name }}">
+                <img class="author-thumb" src="{{ author.profile}}" alt="{{ author.display_name }}">
                 </span>                
                 <span class="author-meta">
                 <span class="post-name"><a target="_blank" href="{{ author.web }}">{{ author.display_name }}</a></span><br/>

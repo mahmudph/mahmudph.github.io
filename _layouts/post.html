@@ -37,11 +37,16 @@ post_class: post-template
                 
                 <!-- Post Title -->
 				<h1 class="posttitle">{{ page.title }}</h1> 
-                
 			</div>
 
-			<!-- Post Featured Image -->
-			{% if page.image %}<img class="featured-image img-fluid" src="{{ site.baseurl }}/{{ page.image }}" alt="{{ page.title }}">{% endif %}
+            <!-- Post Featured Image -->
+            <div  style="align-content: center; align-self: center; justify-content:center; margin-left: auto; margin-right: auto;">
+                {% if page.image %}<img class="featured-image img-fluid" src="{{ site.baseurl }}/{{ page.image }}" width="100%" height="180" alt="{{ page.title }}">{% endif %}
+                {% if page.imageUrl %}
+                    <img class="featured-image img-fluid"  src="{{ page.imageUrl }}" width="100%" height="180" alt="{{ page.title }}">
+                    <p style="text-align: center;"><i>Sumber</i> ({{page.imageTitle}})</p>
+                {% endif %}
+            </div>
 			<!-- End Featured Image -->
 
 			<!-- Post Content -->
@@ -77,17 +82,16 @@ post_class: post-template
             </div>
             <!-- End Prev/Next -->
             
-            
              <!-- Author Box -->
                 {% if page.author %}				
 				<div class="row post-top-meta">
 					<div class="col-md-2">
-						<img class="author-thumb" src="https://www.gravatar.com/avatar/{{ author.gravatar }}?s=250&d=mm&r=x" alt="{{ author.display_name }}">
+						<img class="author-thumb" src="{{site.authors[page.author].profile}}" alt="{{ site.author.display_name }}">
 					</div>
 					<div class="col-md-10">
-						<a target="_blank" class="link-dark" href="{{ author.web }}">{{ author.display_name }}</a><a target="_blank" href="{{ author.twitter }}" class="btn follow">Follow</a>
-						<span class="author-description">{{ author.description }}</span>						
-					</div>
+						<a target="_blank" class="link-dark" href="{{ author.web }}">{{ site.authors[page.author].display_name }}</a><a target="_blank" href="{{ site.author.twitter }}" class="btn follow">Follow</a>
+                        <span class="author-description">{{ site.authors[page.author].description }}</span>						
+                    </div>
 				</div>				
                 {% endif %}
             

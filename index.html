@@ -23,7 +23,7 @@ title: Home
                 </div>
                 <div class="masonrygrid row listrecent">
                     {% for post in paginator.posts  %}
-                        {% if post.tutorial %}
+                        {% if post.tutorial  %}
                             {% include postbox.html %}
                         {% endif %}
                     {% endfor %}
