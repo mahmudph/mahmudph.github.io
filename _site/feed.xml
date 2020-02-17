@@ -5,9 +5,25 @@
     <description>personal blogs for sharing knowlage by mahmud</description>
     <link>http://localhost:4000/</link>
     <atom:link href="http://localhost:4000/feed.xml" rel="self" type="application/rss+xml"/>
-    <pubDate>Wed, 12 Feb 2020 17:10:04 +0700</pubDate>
-    <lastBuildDate>Wed, 12 Feb 2020 17:10:04 +0700</lastBuildDate>
+    <pubDate>Mon, 17 Feb 2020 12:39:31 +0700</pubDate>
+    <lastBuildDate>Mon, 17 Feb 2020 12:39:31 +0700</lastBuildDate>
     <generator>Jekyll v4.0.0</generator>
+    
+      <item>
+        <title>Pentingnya membuat perencanaan atas impian kita.</title>
+        <description>&lt;p&gt;Assalamualaikum warohmatulahi wabarokatuh…&lt;/p&gt;
+
+&lt;p&gt;Hy kawan kawan.
+Pernahkah kalian bermimpi atas sesuatu, seperti halnya ingin sekolah di Universitas ternama, jalan-jalan keluar negri, mendapatkan pekerjaan idaman ataupun memiliki rumah impian..&lt;/p&gt;
+</description>
+        <pubDate>Mon, 17 Feb 2020 00:00:00 +0700</pubDate>
+        <link>http://localhost:4000/blog/Pentingnya-membuat-Pentingnya-membuat-perencanaan-atas-impian-kita/</link>
+        <guid isPermaLink="true">http://localhost:4000/blog/Pentingnya-membuat-Pentingnya-membuat-perencanaan-atas-impian-kita/</guid>
+        
+        <category>blog</category>
+        
+        
+      </item>
     
       <item>
         <title>Powerful things you can do with the Markdown editor</title>
