@@ -4,7 +4,7 @@
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
 <link rel="icon" href="/assets/images/favicon.png">    
-<title>NodeJs, Framework Javascript yang  bisa Berjalan di server | CangkirArtikel</title>
+<title>NodeJs, Framework Javascript yang  Bisa Berjalan di server | CangkirArtikel</title>
     
 <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-alpha.6/css/bootstrap.min.css" integrity="sha384-rwoIResjU2yc3z8GV/NPeZWAv56rSmLldC3R/AZzGRnGxQQKnKkoFVhFQhNUwEyJ" crossorigin="anonymous">
 <link href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet">
@@ -181,22 +181,92 @@
                 <!-- End Categories -->
                 
                 <!-- Post Title -->
-				<h1 class="posttitle">NodeJs, Framework Javascript yang  bisa Berjalan di server</h1> 
+				<h1 class="posttitle">NodeJs, Framework Javascript yang  Bisa Berjalan di server</h1> 
 			</div>
 
             <!-- Post Featured Image -->
             <div  style="align-content: center; align-self: center; justify-content:center; margin-left: auto; margin-right: auto;">
                 
                 
+                    <img class="featured-image img-fluid"  src="https://upload.wikimedia.org/wikipedia/commons/thumb/d/d9/Node.js_logo.svg/590px-Node.js_logo.svg.png" width="100%" height="180" alt="NodeJs, Framework Javascript yang  Bisa Berjalan di server">
+                    <p style="text-align: center;"><i>Sumber</i> ()</p>
+                
             </div>
 			<!-- End Featured Image -->
 
 			<!-- Post Content -->
 			<div class="article-post ">
-				<p><img src="https://upload.wikimedia.org/wikipedia/commons/thumb/d/d9/Node.js_logo.svg/590px-Node.js_logo.svg.png" alt="" /></p>
+				<h2 id="apa-itu-nodejs">Apa itu NodeJs?</h2>
+<p>Node js merupakan suatu pemrograman javascript yang dapat berjalan di server yang mana framework ini di buat dengan mesin javascript Chrome’s V8 yang terkenal akan kecepatan dalam pemrosesan.</p>
 
-<h2 id="apa-itu-nodejs">Apa itu NodeJs?</h2>
-<p>node js merupakan suatu pemrograman javascript yang dapat berjalan di server. dimbil dari nodejs oficiall bahwasanya node js merupakan * <code class="highlighter-rouge">is a JavaScript runtime built on Chrome's V8 JavaScript engine.</code>*</p>
+<p>Javascript yang dulunya hanya bisa berjalan  di  client (browser), namun sekarang berevolusi  menjadi bahasa yang  dapat berjalan di lingkungan server. Sama halnya dengan bahasa server lainya seperti php, ruby, java node js dapat bekerja dalam menggenerate web page secara dinamis tentunya dengan performa yang lebih baik. 
+<img src="https://sdz-upload.s3.amazonaws.com/prod/upload/p1ch1_With%20Node.js%2C%20we%20can%20also%20use%20JavaScript%20on%20the%20server%21%20-%20New%20Page1.png" alt="cara kerja nodejs" /></p>
+
+<p>Node js merupakan salah satu framework pilihan apabila ingin membuat aplikasi <em>secara real time comunication</em>.  Aplikasi itu bisa berupa aplikasi striming atau chat, hal tersebut karena node js bekerja secara asycronomous programing sehingga aplikasi yang dibuat dengan nodeJs dapat bekerja secara lebih cepat.</p>
+
+<p>Berbeda dengan bahasa php yang bekerja secara syncronomous dimana kode di eksekusi dari atas ke bawah secara berurutan, nodeJs dalam mengeksekusi suatu kode dilakukan dengan memilih proses lebih ringan terlebih dahulu kemudian proses yang lebih lama.</p>
+
+<p>Misal nya dalam proses mengupload file biasanya bahasa php akan melakukan proses secara berurutan seperti</p>
+<ol>
+  <li>Proses upload file (program akan melakukan proses upload file)</li>
+  <li>Tampilkan file (tampilkan file yang sudah di upload apabila sudah selesai)</li>
+  <li>lakukan proses lainnya (tampilkan proses lainnya apabila sudah selesai)</li>
+</ol>
+
+<p>Sedangkan nodeJs dapat melakukan proses upload file dengan cara berikut</p>
+<ol>
+  <li>proses upload file (program akan melakukan proses upload file)</li>
+  <li>ketika sudah selesai maka tampilkan file (program akan melakukan proses lain sambil menunggu proses upload file selesai. ini bisa dilakukan karena NodeJs merupakan bahasa yang menggunakan event.  Program akan memanggil even ketika file selesai di upload dan kemudian ditampilkan)</li>
+  <li>lakukan proses lainnya. (lakukan proses lainnya)</li>
+</ol>
+
+<p>Untuk lebih jelasnya proses eksekusi program pada nodeJs bisa dilihat pada gambar berikut
+<img src="https://sdz-upload.s3.amazonaws.com/prod/upload/p2ch1_The%20non-blocking%20model%20in%20programming%20-%20New%20Page.png" alt="" /></p>
+
+<p>Untuk melihat proses kerja nodejs secara nyata bisa melalui kode berikut dalam mengupload file ke sistem.</p>
+
+<div class="language-js highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="kd">let</span> <span class="nx">link</span> <span class="o">=</span> <span class="dl">"</span><span class="s2">http://www.site.com/file.zip</span><span class="dl">"</span><span class="p">;</span>
+<span class="nx">request</span><span class="p">.</span><span class="nx">post</span><span class="p">(</span><span class="nx">link</span><span class="p">,</span> <span class="kd">function</span><span class="p">(</span><span class="nx">error</span><span class="p">,</span>  <span class="nx">response</span> <span class="p">,</span> <span class="nx">body</span><span class="p">)</span>  <span class="p">{</span>
+	<span class="k">if</span><span class="p">(</span><span class="o">!</span><span class="nx">error</span><span class="p">)</span> <span class="p">{</span>
+		<span class="nx">console</span><span class="p">.</span><span class="nx">log</span><span class="p">(</span><span class="dl">"</span><span class="s2">upload file selesai...</span><span class="dl">"</span><span class="p">);</span>
+	<span class="p">}</span>
+<span class="p">});</span>
+<span class="nx">console</span><span class="p">.</span><span class="nx">log</span><span class="p">(</span><span class="dl">"</span><span class="s2">lakukan proses lain ketika proses upload file dilakukan…</span><span class="dl">"</span><span class="p">);</span>
+</code></pre></div></div>
+
+<p>Apa yang terlihat diatas ialah code yang berfungsi untuk proses upload file. fungsi diatas berfungsi sebagai callback program akan memanggil yang kemudian diproses nya. 
+anda sebenarnya bisa menulis kode di atas dengan code seperti berikut.</p>
+
+<div class="language-js highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="kd">let</span> <span class="nx">link</span> <span class="o">=</span> <span class="dl">"</span><span class="s2">http://www.site.com/file.zip</span><span class="dl">"</span><span class="p">;</span>
+
+<span class="kd">function</span> <span class="nx">callback</span><span class="p">(</span><span class="nx">err</span><span class="p">,</span> <span class="nx">res</span><span class="p">,</span> <span class="nx">body</span><span class="p">)</span> <span class="p">{</span>
+	<span class="k">if</span><span class="p">(</span><span class="o">!</span><span class="nx">error</span><span class="p">)</span> <span class="p">{</span>
+		<span class="nx">console</span><span class="p">.</span><span class="nx">log</span><span class="p">(</span><span class="dl">"</span><span class="s2">upload file selesai...</span><span class="dl">"</span><span class="p">);</span>
+	<span class="p">}</span>
+<span class="p">}</span>
+
+<span class="nx">request</span><span class="p">.</span><span class="nx">post</span><span class="p">(</span><span class="nx">link</span><span class="p">,</span> <span class="nx">callback</span><span class="p">);</span>
+<span class="nx">console</span><span class="p">.</span><span class="nx">log</span><span class="p">(</span><span class="dl">"</span><span class="s2">lakukan proses lain ketika proses upload file dilakukan…</span><span class="dl">"</span><span class="p">);</span>
+</code></pre></div></div>
+
+<p>Nodejs dalam memproses code diatas akan melakukan proses upload file terlebih dahulu
+kemudian sembari proses mengupload file selesai program akan melakukan proses lainnya tanpa menunggu proses upload selesai terlebih dahulu.</p>
+
+<p>Dalam segi performa, Nodejs yang dalam framework express  ini memiliki kecepatan rata  request sebanyak 7000  requests per detik. seperti yang dikatakan oleh mamaz(2017) dalam blognya <a href="https://mamaz.github.io/benchmarking-nodejs-http-performance.html" target="blank">disini</a> bahwasanya node js dengan menggunakan framework express.js yang di test dengan melakukan request sebanyak 5 juta, node js ini mampu mengandel nya dengan waktu selama 11 menit.</p>
+
+<p>Setelah mengetahui performa dari nodejs keeuntungan lainnya ketika mempelajari atau mengggunakan framework ini ialah</p>
+<ol>
+  <li>
+    <p>Menggunakan bahasa javascript. 
+     Dengan menggunakan bahasa javascript anda hanya belajar satu bahasa pemrograman dan anda bisa dengan mudah untuk mempelajari hal-hal lainnya seprti teknologi front end (react, react-native, vue, nuxt, gatsby ataupun angular) <em>learn one write everiwhere</em></p>
+  </li>
+  <li>
+    <p>Kaya akan library yang berlimpah. 
+         adanya situs npmjs.com membuat anda lebih mudah dalam mengembangkan aplikasi yang anda buat, anda tidak harus membuat semuanya dari awal, banyak orang yang telah membuat fungsi/modul modul kusus untuk berbagai permasalahan dalam pengembangan aplikasi, contohnya socket.io dan dll.</p>
+  </li>
+</ol>
+
+<p>Sekian dan terimakasih</p>
 
                 <div class="clearfix"></div>
 			</div>
@@ -204,7 +274,7 @@
             <!-- Post Date -->
             <p>
             <small>
-                <span class="post-date"><time class="post-date" datetime="2020-11-01">01 Nov 2020</time></span>           
+                <span class="post-date"><time class="post-date" datetime="2019-11-01">01 Nov 2019</time></span>           
                 
                 </small>
             </p>
@@ -214,10 +284,10 @@
             <!-- Prev/Next -->
             <div class="row PageNavigation mt-4 prevnextlinks">
               
-                <div class="col-md-6 rightborder pl-0">
-                    <a class="thepostlink" href="http://localhost:4000/blog/Pentingnya-membuat-Pentingnya-membuat-perencanaan-atas-impian-kita/">&laquo; Pentingnya membuat perencanaan atas impian kita.</a>
-                </div>
               
+                <div class="col-md-6 text-right pr-0">
+                    <a class="thepostlink" href="http://localhost:4000/blog/Pentingnya-membuat-Pentingnya-membuat-perencanaan-atas-impian-kita/">Pentingnya membuat perencanaan atas impian kita &raquo;</a>
+                </div>
               
             </div>
             <!-- End Prev/Next -->

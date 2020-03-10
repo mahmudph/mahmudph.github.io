@@ -1,5 +1,5 @@
 ---
-title: Pentingnya membuat perencanaan atas impian kita.
+title: Pentingnya membuat perencanaan atas impian kita
 layout: post
 tag: blog
 author: Mahmud

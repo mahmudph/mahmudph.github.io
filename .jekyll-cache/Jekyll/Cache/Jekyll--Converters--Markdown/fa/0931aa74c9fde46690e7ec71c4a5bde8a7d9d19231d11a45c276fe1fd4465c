@@ -1,0 +1,56 @@
+I"�<h2 id="apa-itu-nodejs">Apa itu NodeJs?</h2>
+<p>Node js merupakan suatu pemrograman javascript yang dapat berjalan di server yang mana framework ini di buat dengan mesin javascript Chrome’s V8 yang terkenal akan kecepatan dalam pemrosesan.</p>
+
+<p>Javascript yang dulunya hanya bisa berjalan  di  client (browser), namun sekarang berevolusi  menjadi bahasa yang  dapat berjalan di lingkungan server. Sama halnya dengan bahasa server lainya seperti php, ruby, java node js dapat bekerja dalam menggenerate web page secara dinamis tentunya dengan performa yang lebih baik. 
+<img src="https://sdz-upload.s3.amazonaws.com/prod/upload/p1ch1_With%20Node.js%2C%20we%20can%20also%20use%20JavaScript%20on%20the%20server%21%20-%20New%20Page1.png" alt="cara kerja nodejs" /></p>
+
+<p>Node js merupakan salah satu framework pilihan apabila ingin membuat aplikasi <em>secara real time comunication</em>.  Aplikasi itu bisa berupa aplikasi striming atau chat, hal tersebut karena node js bekerja secara asycronomous programing sehingga aplikasi yang dibuat dengan nodeJs dapat bekerja secara lebih cepat.</p>
+
+<p>Berbeda dengan bahasa php yang bekerja secara syncronomous dimana kode di eksekusi dari atas ke bawah secara berurutan, nodeJs dalam mengeksekusi suatu kode dilakukan dengan memilih proses lebih ringan terlebih dahulu kemudian proses yang lebih lama.</p>
+
+<p>Misal nya dalam proses mengupload file biasanya bahasa php akan melakukan proses secara berurutan seperti</p>
+<ol>
+  <li>Proses upload file (program akan melakukan proses upload file)</li>
+  <li>Tampilkan file (tampilkan file yang sudah di upload apabila sudah selesai)</li>
+  <li>lakukan proses lainnya (tampilkan proses lainnya apabila sudah selesai)</li>
+</ol>
+
+<p>Sedangkan nodeJs dapat melakukan proses upload file dengan cara berikut</p>
+<ol>
+  <li>proses upload file (program akan melakukan proses upload file)</li>
+  <li>ketika sudah selesai maka tampilkan file (program akan melakukan proses lain sambil menunggu proses upload file selesai. ini bisa dilakukan karena NodeJs merupakan bahasa yang menggunakan event.  Program akan memanggil even ketika file selesai di upload dan kemudian ditampilkan)</li>
+  <li>lakukan proses lainnya. (lakukan proses lainnya)</li>
+</ol>
+
+<p>Untuk lebih jelasnya proses eksekusi program pada nodeJs bisa dilihat pada gambar berikut
+<img src="https://sdz-upload.s3.amazonaws.com/prod/upload/p2ch1_The%20non-blocking%20model%20in%20programming%20-%20New%20Page.png" alt="" /></p>
+
+<p>Untuk melihat proses kerja nodejs secara nyata bisa melalui kode berikut dalam mengupload file ke sistem.</p>
+
+<div class="language-js highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="kd">let</span> <span class="nx">link</span> <span class="o">=</span> <span class="dl">"</span><span class="s2">http://www.site.com/file.zip</span><span class="dl">"</span><span class="p">;</span>
+<span class="nx">request</span><span class="p">.</span><span class="nx">post</span><span class="p">(</span><span class="nx">link</span><span class="p">,</span> <span class="kd">function</span><span class="p">(</span><span class="nx">error</span><span class="p">,</span>  <span class="nx">response</span> <span class="p">,</span> <span class="nx">body</span><span class="p">)</span>  <span class="p">{</span>
+	<span class="k">if</span><span class="p">(</span><span class="o">!</span><span class="nx">error</span><span class="p">)</span> <span class="p">{</span>
+		<span class="nx">console</span><span class="p">.</span><span class="nx">log</span><span class="p">(</span><span class="dl">"</span><span class="s2">upload file selesai...</span><span class="dl">"</span><span class="p">);</span>
+	<span class="p">}</span>
+<span class="p">});</span>
+<span class="nx">console</span><span class="p">.</span><span class="nx">log</span><span class="p">(</span><span class="dl">"</span><span class="s2">lakukan proses lain ketika proses upload file dilakukan…</span><span class="dl">"</span><span class="p">);</span>
+</code></pre></div></div>
+
+<p>Apa yang terlihat diatas ialah code yang berfungsi untuk proses upload file. fungsi diatas berfungsi sebagai callback program akan memanggil yang kemudian diproses nya. 
+anda sebenarnya bisa menulis kode di atas dengan code seperti berikut.</p>
+
+<div class="language-js highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="kd">let</span> <span class="nx">link</span> <span class="o">=</span> <span class="dl">"</span><span class="s2">http://www.site.com/file.zip</span><span class="dl">"</span><span class="p">;</span>
+
+<span class="kd">function</span> <span class="nx">callback</span><span class="p">(</span><span class="nx">err</span><span class="p">,</span> <span class="nx">res</span><span class="p">,</span> <span class="nx">body</span><span class="p">)</span> <span class="p">{</span>
+	<span class="k">if</span><span class="p">(</span><span class="o">!</span><span class="nx">error</span><span class="p">)</span> <span class="p">{</span>
+		<span class="nx">console</span><span class="p">.</span><span class="nx">log</span><span class="p">(</span><span class="dl">"</span><span class="s2">upload file selesai...</span><span class="dl">"</span><span class="p">);</span>
+	<span class="p">}</span>
+<span class="p">}</span>
+
+<span class="nx">request</span><span class="p">.</span><span class="nx">post</span><span class="p">(</span><span class="nx">link</span><span class="p">,</span> <span class="nx">callback</span><span class="p">);</span>
+<span class="nx">console</span><span class="p">.</span><span class="nx">log</span><span class="p">(</span><span class="dl">"</span><span class="s2">lakukan proses lain ketika proses upload file dilakukan…</span><span class="dl">"</span><span class="p">);</span>
+</code></pre></div></div>
+
+<p>Nodejs dalam memproses code diatas akan melakukan proses upload file terlebih dahulu
+kemudian sembari proses mengupload file selesai program akan melakukan proses lainnya tanpa menunggu proses upload selesai terlebih dahulu.</p>
+:ET

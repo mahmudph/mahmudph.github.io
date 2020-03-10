@@ -5,30 +5,12 @@
     <description>personal blogs for sharing knowlage by mahmud</description>
     <link>http://localhost:4000/</link>
     <atom:link href="http://localhost:4000/feed.xml" rel="self" type="application/rss+xml"/>
-    <pubDate>Fri, 06 Mar 2020 10:39:18 +0700</pubDate>
-    <lastBuildDate>Fri, 06 Mar 2020 10:39:18 +0700</lastBuildDate>
+    <pubDate>Tue, 10 Mar 2020 22:54:08 +0700</pubDate>
+    <lastBuildDate>Tue, 10 Mar 2020 22:54:08 +0700</lastBuildDate>
     <generator>Jekyll v4.0.0</generator>
     
       <item>
-        <title>NodeJs, Framework Javascript yang  bisa Berjalan di server</title>
-        <description>&lt;p&gt;&lt;img src=&quot;https://upload.wikimedia.org/wikipedia/commons/thumb/d/d9/Node.js_logo.svg/590px-Node.js_logo.svg.png&quot; alt=&quot;&quot; /&gt;&lt;/p&gt;
-
-&lt;h2 id=&quot;apa-itu-nodejs&quot;&gt;Apa itu NodeJs?&lt;/h2&gt;
-&lt;p&gt;node js merupakan suatu pemrograman javascript yang dapat berjalan di server. dimbil dari nodejs oficiall bahwasanya node js merupakan * &lt;code class=&quot;highlighter-rouge&quot;&gt;is a JavaScript runtime built on Chrome's V8 JavaScript engine.&lt;/code&gt;*&lt;/p&gt;
-</description>
-        <pubDate>Sun, 01 Nov 2020 00:00:00 +0700</pubDate>
-        <link>http://localhost:4000/tutorial/Pengenalan-NodeJs-sebagai-server-side-javascript/</link>
-        <guid isPermaLink="true">http://localhost:4000/tutorial/Pengenalan-NodeJs-sebagai-server-side-javascript/</guid>
-        
-        <category>nodejs</category>
-        
-        
-        <category>nosejs</category>
-        
-      </item>
-    
-      <item>
-        <title>Pentingnya membuat perencanaan atas impian kita.</title>
+        <title>Pentingnya membuat perencanaan atas impian kita</title>
         <description>&lt;blockquote&gt;
 merencanakan sesuatu berarti kita melatih diri untuk berani mengambil keputusan mengenai apa saja yang menjadi prioritas untuk di lakukan maupun tidak untuk dilakukan. 
 &lt;/blockquote&gt;
@@ -100,54 +82,87 @@ Selain itu, melibatkan allah dalam mencapai tujuan merupakan suatu yang dapat me
       </item>
     
       <item>
-        <title>Powerful things you can do with the Markdown editor</title>
-        <description>&lt;p&gt;There are lots of powerful things you can do with the Markdown editor&lt;/p&gt;
+        <title>NodeJs, Framework Javascript yang  Bisa Berjalan di server</title>
+        <description>&lt;h2 id=&quot;apa-itu-nodejs&quot;&gt;Apa itu NodeJs?&lt;/h2&gt;
+&lt;p&gt;Node js merupakan suatu pemrograman javascript yang dapat berjalan di server yang mana framework ini di buat dengan mesin javascript Chrome’s V8 yang terkenal akan kecepatan dalam pemrosesan.&lt;/p&gt;
 
-&lt;p&gt;If you’ve gotten pretty comfortable with writing in Markdown, then you may enjoy some more advanced tips about the types of things you can do with Markdown!&lt;/p&gt;
+&lt;p&gt;Javascript yang dulunya hanya bisa berjalan  di  client (browser), namun sekarang berevolusi  menjadi bahasa yang  dapat berjalan di lingkungan server. Sama halnya dengan bahasa server lainya seperti php, ruby, java node js dapat bekerja dalam menggenerate web page secara dinamis tentunya dengan performa yang lebih baik. 
+&lt;img src=&quot;https://sdz-upload.s3.amazonaws.com/prod/upload/p1ch1_With%20Node.js%2C%20we%20can%20also%20use%20JavaScript%20on%20the%20server%21%20-%20New%20Page1.png&quot; alt=&quot;cara kerja nodejs&quot; /&gt;&lt;/p&gt;
 
-&lt;p&gt;As with the last post about the editor, you’ll want to be actually editing this post as you read it so that you can see all the Markdown code we’re using.&lt;/p&gt;
+&lt;p&gt;Node js merupakan salah satu framework pilihan apabila ingin membuat aplikasi &lt;em&gt;secara real time comunication&lt;/em&gt;.  Aplikasi itu bisa berupa aplikasi striming atau chat, hal tersebut karena node js bekerja secara asycronomous programing sehingga aplikasi yang dibuat dengan nodeJs dapat bekerja secara lebih cepat.&lt;/p&gt;
 
-&lt;h2 id=&quot;special-formatting&quot;&gt;Special formatting&lt;/h2&gt;
+&lt;p&gt;Berbeda dengan bahasa php yang bekerja secara syncronomous dimana kode di eksekusi dari atas ke bawah secara berurutan, nodeJs dalam mengeksekusi suatu kode dilakukan dengan memilih proses lebih ringan terlebih dahulu kemudian proses yang lebih lama.&lt;/p&gt;
 
-&lt;p&gt;As well as bold and italics, you can also use some other special formatting in Markdown when the need arises, for example:&lt;/p&gt;
+&lt;p&gt;Misal nya dalam proses mengupload file biasanya bahasa php akan melakukan proses secara berurutan seperti&lt;/p&gt;
+&lt;ol&gt;
+  &lt;li&gt;Proses upload file (program akan melakukan proses upload file)&lt;/li&gt;
+  &lt;li&gt;Tampilkan file (tampilkan file yang sudah di upload apabila sudah selesai)&lt;/li&gt;
+  &lt;li&gt;lakukan proses lainnya (tampilkan proses lainnya apabila sudah selesai)&lt;/li&gt;
+&lt;/ol&gt;
 
-&lt;ul&gt;
-  &lt;li&gt;&lt;del&gt;strike through&lt;/del&gt;&lt;/li&gt;
-  &lt;li&gt;==highlight==&lt;/li&gt;
-  &lt;li&gt;*escaped characters*&lt;/li&gt;
-&lt;/ul&gt;
+&lt;p&gt;Sedangkan nodeJs dapat melakukan proses upload file dengan cara berikut&lt;/p&gt;
+&lt;ol&gt;
+  &lt;li&gt;proses upload file (program akan melakukan proses upload file)&lt;/li&gt;
+  &lt;li&gt;ketika sudah selesai maka tampilkan file (program akan melakukan proses lain sambil menunggu proses upload file selesai. ini bisa dilakukan karena NodeJs merupakan bahasa yang menggunakan event.  Program akan memanggil even ketika file selesai di upload dan kemudian ditampilkan)&lt;/li&gt;
+  &lt;li&gt;lakukan proses lainnya. (lakukan proses lainnya)&lt;/li&gt;
+&lt;/ol&gt;
 
-&lt;h2 id=&quot;writing-code-blocks&quot;&gt;Writing code blocks&lt;/h2&gt;
+&lt;p&gt;Untuk lebih jelasnya proses eksekusi program pada nodeJs bisa dilihat pada gambar berikut
+&lt;img src=&quot;https://sdz-upload.s3.amazonaws.com/prod/upload/p2ch1_The%20non-blocking%20model%20in%20programming%20-%20New%20Page.png&quot; alt=&quot;&quot; /&gt;&lt;/p&gt;
 
-&lt;p&gt;There are two types of code elements which can be inserted in Markdown, the first is inline, and the other is block. Inline code is formatted by wrapping any word or words in back-ticks, &lt;code class=&quot;highlighter-rouge&quot;&gt;like this&lt;/code&gt;. Larger snippets of code can be displayed across multiple lines using triple back ticks:&lt;/p&gt;
+&lt;p&gt;Untuk melihat proses kerja nodejs secara nyata bisa melalui kode berikut dalam mengupload file ke sistem.&lt;/p&gt;
 
-&lt;div class=&quot;highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;.my-link {
-    text-decoration: underline;
-}
+&lt;div class=&quot;language-js highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;&lt;span class=&quot;kd&quot;&gt;let&lt;/span&gt; &lt;span class=&quot;nx&quot;&gt;link&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;dl&quot;&gt;&quot;&lt;/span&gt;&lt;span class=&quot;s2&quot;&gt;http://www.site.com/file.zip&lt;/span&gt;&lt;span class=&quot;dl&quot;&gt;&quot;&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;;&lt;/span&gt;
+&lt;span class=&quot;nx&quot;&gt;request&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;nx&quot;&gt;post&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;nx&quot;&gt;link&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt; &lt;span class=&quot;kd&quot;&gt;function&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;nx&quot;&gt;error&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt;  &lt;span class=&quot;nx&quot;&gt;response&lt;/span&gt; &lt;span class=&quot;p&quot;&gt;,&lt;/span&gt; &lt;span class=&quot;nx&quot;&gt;body&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;)&lt;/span&gt;  &lt;span class=&quot;p&quot;&gt;{&lt;/span&gt;
+	&lt;span class=&quot;k&quot;&gt;if&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;!&lt;/span&gt;&lt;span class=&quot;nx&quot;&gt;error&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;)&lt;/span&gt; &lt;span class=&quot;p&quot;&gt;{&lt;/span&gt;
+		&lt;span class=&quot;nx&quot;&gt;console&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;nx&quot;&gt;log&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;dl&quot;&gt;&quot;&lt;/span&gt;&lt;span class=&quot;s2&quot;&gt;upload file selesai...&lt;/span&gt;&lt;span class=&quot;dl&quot;&gt;&quot;&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;);&lt;/span&gt;
+	&lt;span class=&quot;p&quot;&gt;}&lt;/span&gt;
+&lt;span class=&quot;p&quot;&gt;});&lt;/span&gt;
+&lt;span class=&quot;nx&quot;&gt;console&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;nx&quot;&gt;log&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;dl&quot;&gt;&quot;&lt;/span&gt;&lt;span class=&quot;s2&quot;&gt;lakukan proses lain ketika proses upload file dilakukan…&lt;/span&gt;&lt;span class=&quot;dl&quot;&gt;&quot;&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;);&lt;/span&gt;
 &lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
 
-&lt;p&gt;If you want to get really fancy, you can even add syntax highlighting using Rouge.&lt;/p&gt;
+&lt;p&gt;Apa yang terlihat diatas ialah code yang berfungsi untuk proses upload file. fungsi diatas berfungsi sebagai callback program akan memanggil yang kemudian diproses nya. 
+anda sebenarnya bisa menulis kode di atas dengan code seperti berikut.&lt;/p&gt;
 
-&lt;p&gt;&lt;img src=&quot;/assets/images/3.jpg&quot; alt=&quot;walking&quot; /&gt;&lt;/p&gt;
+&lt;div class=&quot;language-js highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;&lt;span class=&quot;kd&quot;&gt;let&lt;/span&gt; &lt;span class=&quot;nx&quot;&gt;link&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;dl&quot;&gt;&quot;&lt;/span&gt;&lt;span class=&quot;s2&quot;&gt;http://www.site.com/file.zip&lt;/span&gt;&lt;span class=&quot;dl&quot;&gt;&quot;&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;;&lt;/span&gt;
 
-&lt;h2 id=&quot;reference-lists&quot;&gt;Reference lists&lt;/h2&gt;
+&lt;span class=&quot;kd&quot;&gt;function&lt;/span&gt; &lt;span class=&quot;nx&quot;&gt;callback&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;nx&quot;&gt;err&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt; &lt;span class=&quot;nx&quot;&gt;res&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt; &lt;span class=&quot;nx&quot;&gt;body&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;)&lt;/span&gt; &lt;span class=&quot;p&quot;&gt;{&lt;/span&gt;
+	&lt;span class=&quot;k&quot;&gt;if&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;!&lt;/span&gt;&lt;span class=&quot;nx&quot;&gt;error&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;)&lt;/span&gt; &lt;span class=&quot;p&quot;&gt;{&lt;/span&gt;
+		&lt;span class=&quot;nx&quot;&gt;console&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;nx&quot;&gt;log&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;dl&quot;&gt;&quot;&lt;/span&gt;&lt;span class=&quot;s2&quot;&gt;upload file selesai...&lt;/span&gt;&lt;span class=&quot;dl&quot;&gt;&quot;&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;);&lt;/span&gt;
+	&lt;span class=&quot;p&quot;&gt;}&lt;/span&gt;
+&lt;span class=&quot;p&quot;&gt;}&lt;/span&gt;
 
-&lt;p&gt;The quick brown jumped over the lazy.&lt;/p&gt;
+&lt;span class=&quot;nx&quot;&gt;request&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;nx&quot;&gt;post&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;nx&quot;&gt;link&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt; &lt;span class=&quot;nx&quot;&gt;callback&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;);&lt;/span&gt;
+&lt;span class=&quot;nx&quot;&gt;console&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;nx&quot;&gt;log&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;dl&quot;&gt;&quot;&lt;/span&gt;&lt;span class=&quot;s2&quot;&gt;lakukan proses lain ketika proses upload file dilakukan…&lt;/span&gt;&lt;span class=&quot;dl&quot;&gt;&quot;&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;);&lt;/span&gt;
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
 
-&lt;p&gt;Another way to insert links in markdown is using reference lists. You might want to use this style of linking to cite reference material in a Wikipedia-style. All of the links are listed at the end of the document, so you can maintain full separation between content and its source or reference.&lt;/p&gt;
+&lt;p&gt;Nodejs dalam memproses code diatas akan melakukan proses upload file terlebih dahulu
+kemudian sembari proses mengupload file selesai program akan melakukan proses lainnya tanpa menunggu proses upload selesai terlebih dahulu.&lt;/p&gt;
 
-&lt;h2 id=&quot;full-html&quot;&gt;Full HTML&lt;/h2&gt;
+&lt;p&gt;Dalam segi performa, Nodejs yang dalam framework express  ini memiliki kecepatan rata  request sebanyak 7000  requests per detik. seperti yang dikatakan oleh mamaz(2017) dalam blognya &lt;a href=&quot;https://mamaz.github.io/benchmarking-nodejs-http-performance.html&quot; target=&quot;blank&quot;&gt;disini&lt;/a&gt; bahwasanya node js dengan menggunakan framework express.js yang di test dengan melakukan request sebanyak 5 juta, node js ini mampu mengandel nya dengan waktu selama 11 menit.&lt;/p&gt;
 
-&lt;p&gt;Perhaps the best part of Markdown is that you’re never limited to just Markdown. You can write HTML directly in the Markdown editor and it will just work as HTML usually does. No limits! Here’s a standard YouTube embed code as an example:&lt;/p&gt;
+&lt;p&gt;Setelah mengetahui performa dari nodejs keeuntungan lainnya ketika mempelajari atau mengggunakan framework ini ialah&lt;/p&gt;
+&lt;ol&gt;
+  &lt;li&gt;
+    &lt;p&gt;Menggunakan bahasa javascript. 
+     Dengan menggunakan bahasa javascript anda hanya belajar satu bahasa pemrograman dan anda bisa dengan mudah untuk mempelajari hal-hal lainnya seprti teknologi front end (react, react-native, vue, nuxt, gatsby ataupun angular) &lt;em&gt;learn one write everiwhere&lt;/em&gt;&lt;/p&gt;
+  &lt;/li&gt;
+  &lt;li&gt;
+    &lt;p&gt;Kaya akan library yang berlimpah. 
+         adanya situs npmjs.com membuat anda lebih mudah dalam mengembangkan aplikasi yang anda buat, anda tidak harus membuat semuanya dari awal, banyak orang yang telah membuat fungsi/modul modul kusus untuk berbagai permasalahan dalam pengembangan aplikasi, contohnya socket.io dan dll.&lt;/p&gt;
+  &lt;/li&gt;
+&lt;/ol&gt;
 
-&lt;p&gt;&lt;iframe style=&quot;width:100%;&quot; height=&quot;315&quot; src=&quot;https://www.youtube.com/embed/Cniqsc9QfDo?rel=0&amp;amp;showinfo=0&quot; frameborder=&quot;0&quot; allowfullscreen=&quot;&quot;&gt;&lt;/iframe&gt;&lt;/p&gt;
+&lt;p&gt;Sekian dan terimakasih&lt;/p&gt;
 </description>
-        <pubDate>Fri, 12 Jan 2018 00:00:00 +0700</pubDate>
-        <link>http://localhost:4000/tutorial/powerful-things-markdown-editor/</link>
-        <guid isPermaLink="true">http://localhost:4000/tutorial/powerful-things-markdown-editor/</guid>
-        
+        <pubDate>Fri, 01 Nov 2019 00:00:00 +0700</pubDate>
+        <link>http://localhost:4000/tutorial/Pengenalan-NodeJs-sebagai-server-side-javascript/</link>
+        <guid isPermaLink="true">http://localhost:4000/tutorial/Pengenalan-NodeJs-sebagai-server-side-javascript/</guid>
         
         <category>nodejs</category>
+        
+        
+        <category>nosejs</category>
         
       </item>
     
