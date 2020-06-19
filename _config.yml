@@ -1,7 +1,7 @@
 # Site
-name: CangkirArtikel
+name: MahmudPh
 description: personal blogs for sharing knowlage by mahmud
-meta_description: "membahas mengenai segala hal berkaitan dengan teknologi"
+meta_description: "blogs pribadi saya"
 logo: 'assets/images/logo.png'
 favicon: 'assets/images/favicon.ico'
 paginate: 6
@@ -28,14 +28,6 @@ authors:
     profile: https://sisfo.binadarma.ac.id/upload/62158.jpg
     twitter: https://twitter.com/wowthemesnet
     description: "Layaknya seperti layar kecil berada di lautan bebas, begitu seringnya terkena guncangan ombak maupun tiupan angin, jika tidak memiliki keteguhan dan kemantapan dalam mengendalikannya tentulah layar tersebut akan cepat tenggelam. begitupun dengan diri kita, ketika tidak memiliki prinsip dan perencanaan yang matang maka sangat mungkin akan tersesat dan tak akan pernah sampai."
-  Ferizal:
-    name: Ferizal
-    display_name: Ferizalsyah
-    email: ferizalsyah21@gmail.com
-    web: null
-    twitter: https://twitter.com/wowthemesnet
-    description: "null"
-
 
 # Plugins
 plugins_dir: 

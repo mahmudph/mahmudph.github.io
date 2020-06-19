@@ -1,4 +1,4 @@
-I"²<h2 id="apa-itu-nodejs">Apa itu NodeJs?</h2>
+I"¬<h2 id="apa-itu-nodejs">Apa itu NodeJs?</h2>
 <p>Node js merupakan suatu pemrograman javascript yang dapat berjalan di server yang mana framework ini di buat dengan mesin javascript Chromeâ€™s V8 yang terkenal akan kecepatan dalam pemrosesan.</p>
 
 <p>Javascript yang dulunya hanya bisa berjalan  di  client (browser), namun sekarang berevolusi  menjadi bahasa yang  dapat berjalan di lingkungan server. Sama halnya dengan bahasa server lainya seperti php, ruby, java node js dapat bekerja dalam menggenerate web page secara dinamis tentunya dengan performa yang lebih baik. 
@@ -60,11 +60,11 @@ kemudian sembari proses mengupload file selesai program akan melakukan proses la
 <ol>
   <li>
     <p>Menggunakan bahasa javascript. 
-     Dengan menggunakan bahasa javascript anda hanya belajar satu bahasa pemrograman dan anda bisa dengan mudah untuk mempelajari hal-hal lainnya seprti teknologi front end (react, react-native, vue, nuxt, gatsby ataupun angular) <em>learn one write everiwhere</em></p>
+    Dengan menggunakan bahasa javascript anda hanya belajar satu bahasa pemrograman dan anda bisa dengan mudah untuk mempelajari hal-hal lainnya seprti teknologi front end (react, react-native, vue, nuxt, gatsby ataupun angular) <em>learn one write everiwhere</em></p>
   </li>
   <li>
     <p>Kaya akan library yang berlimpah. 
-         adanya situs npmjs.com membuat anda lebih mudah dalam mengembangkan aplikasi yang anda buat, anda tidak harus membuat semuanya dari awal, banyak orang yang telah membuat fungsi/modul modul kusus untuk berbagai permasalahan dalam pengembangan aplikasi, contohnya socket.io dan dll.</p>
+    adanya situs npmjs.com membuat anda lebih mudah dalam mengembangkan aplikasi yang anda buat, anda tidak harus membuat semuanya dari awal, banyak orang yang telah membuat fungsi/modul modul kusus untuk berbagai permasalahan dalam pengembangan aplikasi, contohnya socket.io dan dll.</p>
   </li>
 </ol>
 
