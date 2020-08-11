@@ -5,8 +5,8 @@
     <description>personal blogs for sharing knowlage by mahmud</description>
     <link>http://localhost:4000/</link>
     <atom:link href="http://localhost:4000/feed.xml" rel="self" type="application/rss+xml"/>
-    <pubDate>Tue, 11 Aug 2020 13:39:18 +0700</pubDate>
-    <lastBuildDate>Tue, 11 Aug 2020 13:39:18 +0700</lastBuildDate>
+    <pubDate>Tue, 11 Aug 2020 13:51:11 +0700</pubDate>
+    <lastBuildDate>Tue, 11 Aug 2020 13:51:11 +0700</lastBuildDate>
     <generator>Jekyll v4.0.0</generator>
     
       <item>
